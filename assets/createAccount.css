@@ -1,0 +1,53 @@
+#registerAcc {
+}
+
+.container-register{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    position: relative;
+    margin-top: 50px;
+    min-height: 150px;
+    background: linear-gradient(to bottom right,var(--bg1),var(--bg2));
+}
+
+.form-createRegister {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+
+}
+
+.form-createRegister h1 {
+    margin-bottom: 40px;
+}
+
+.form-createRegister button {
+    height: 35px;
+    width: 100%;
+    margin-bottom: 30px;
+    background: #9b59b6;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.form-text-create {
+    margin-bottom: 40px;
+    position: relative;
+
+}
+
+.form-text-create input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    cursor: pointer;
+
+}
+
+

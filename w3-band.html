@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3_Band</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/login.css">
+    <link rel="stylesheet " href="./assets/createAccount.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+
+</head>
+<body>
+<div id="Wapper">
+    <div id="header">
+        <ul id="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">Band</a></li>
+            <li><a href="">Tour</a></li>
+            <li><a href="">Contact</a></li>
+            <li>
+                <a href="">
+                    More
+                    <i class="nav-arrow-down" class="ti-angle-down"></i>
+                </a>
+                <ul class="subnav">
+                    <li><a href="">Merchandise</a></li>
+                    <li><a href="">Extras</a></li>
+                    <li><a href="">Media</a></li>
+                </ul>
+
+            </li>
+        </ul>
+        <!-- End : Nav -->
+
+        <!-- Begin: login button -->
+
+
+        <div class="login-btn" style="display: inline-block">
+            <p onclick="Login()" id="dangNhap" ><i class="login-icon ti-user"></i></p>
+            <a href="#" id="signOut" onclick="signout()" style="display: none">Exit</a>
+            <p id="result" style="color: white"></p>
+        </div>
+
+
+        <!-- End: login button -->
+    </div>
+
+
+    <div class="mySlider" id="slider" style="display: block">
+        <div class="text-content">
+            <h2 class="text-heading">Chicago</h2>
+            <div class="text-description">Thank you,Chicago-A night we won't forget.</div>
+        </div>
+
+
+    </div>
+    <div class="mySlider" id="slider1" style="display: none">
+        <div class="text-content">
+            <h2 class="text-heading">Los Angeles</h2>
+            <div class="text-description">We had the best time playing at venice Beach.</div>
+        </div>
+
+    </div>
+    <div class="mySlider" id="slider2" style="display: none">
+        <div class="text-content">
+            <h2 class="text-heading">New York</h2>
+            <div class="text-description">The atmosphere in New York is lorem ipsum.</div>
+        </div>
+
+    </div>
+
+
+    <div id="content">
+        <div class="content-section">
+            <h2 class="section-heading">THE BAND</h2>
+            <p class="section-sub-heading">We love music</p>
+            <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="member-list">
+                <div class="member-item">
+                    <p class="member-name">Adam</p>
+                    <img src="./assets/img/member1/adam-levine-of-maroon-5-performs-during-the-pepsi-super-news-photo-1093451218-1549291410.jpg"
+                         alt="Name" class="member-img">
+                </div>
+                <div class="member-item">
+                    <p class="member-name">Zayn</p>
+                    <img src="./assets/img/member1/a47afbe81a023d1076bbae0d6db21252.jpg" alt="Name" class="member-img">
+                </div>
+                <div class="member-item">
+                    <p class="member-name">Justin</p>
+                    <img src="./assets/img/member1/justin-bieber-mua-mot-con-khi-ao-voi-gia-hon-29-ty-dong-882-6295764.jpg"
+                         alt="Name" class="member-img">
+                </div>
+            </div>
+        </div>
+        <!-- Tuor section -->
+        <div class="tour-section">
+            <div class="content-section">
+                <h2 class="section-heading text-white">TOUR DATES</h2>
+                <p class="section-sub-heading text-white">Remember to book your tickets!</p>
+
+                <!-- tickets -->
+                <ul class="tickets-list">
+                    <li>September <span class="sold-out">sold out</span></li>
+                    <li>October <span class="sold-out">sold out</span></li>
+                    <li>November <span class="quantity">3</span></li>
+                </ul>
+
+                <!-- place -->
+                <div class="place-list">
+
+                    <div class="place-item">
+                        <img src="./assets/img/places/newyork.jpg" alt="New York" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">New York</h3>
+                            <p class="place-time">Fri 27 Nov 2022</p>
+                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button type="button" onclick="change1()"><a href="#" class="place-buy-btn">Buy Tickets</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="place-item">
+                        <img src="./assets/img/places/paris.jpg" alt="Paris" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">Paris</h3>
+                            <p class="place-time">Sat 28 Nov 2022</p>
+                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button type="button" onclick="change1()"><a href="#" class="place-buy-btn">Buy Tickets</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="place-item">
+                        <img src="./assets/img/places/sanfran.jpg" alt="San Fancisco" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">San Fancisco</h3>
+                            <p class="place-time">Sun 29 Nov 2022</p>
+                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button type="button" onclick="change1()"><a href="#" class="place-buy-btn">Buy Tickets</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section" style="margin-bottom: 00px">
+            <h2 class="section-heading">CONTACT</h2>
+            <p class="section-sub-heading">Fan? Drop a note!</p>
+
+            <div class="row contact-content ">
+                <div class="col col-half contact-info">
+                    <p><i class="ti-location-pin">Chicago,Us</i></p>
+                    <p><i class="ti-mobile">Phone:+84 </i></p>
+                    <p><i class="ti-email">Email:email@gmail.com</i></p>
+                </div>
+                <div class="col col-half contact-form ">
+                    <form action="">
+                        <div class="row ">
+                            <div class="col col-half">
+                                <input type="text" class="from-control" placeholder="Name" id="name-text">
+                            </div>
+                            <div class="col col-half">
+                                <input type="email" class="from-control" placeholder="Email" id="email-text">
+                            </div>
+
+                        </div>
+                        <div class="row mt-8">
+                            <div class="col col-full">
+                                <input style="padding: 10px; border: 1px solid #ccc ;width: 100%;" type="text"
+                                       name="message" placeholder="Message" id="mes-text">
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <button class="mt-8 form-submit" type="submit" onclick="SenT()" style="cursor:pointer">Send</button>
+            </div>
+        </div>
+        <div id="slider4">
+            <div id="login">
+                <div class="login-modal">
+                    <div class="login-container">
+                        <header class="login-header">
+                            Client window
+                        </header>
+
+                        <form>
+
+                            <div class="login-item">
+                                <label><i class="ti-user"></i>
+                                    User Name</label> <br>
+                                <div id="input-name"></div>
+                            </div>
+
+                            <div class="login-item">
+                                <label><i class="ti-mobile"></i>
+                                    Email</label> <br>
+                                <div id="input-email"></div>
+                            </div>
+
+                            <div class="login-item">
+                                <label><i class="ti-email"></i>
+                                    Message</label> <br>
+                                <div id="input-message"></div>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+            <div style="width: 400px;float: left;padding: 50px;margin-top: 90px">
+                <div class="login-modal">
+                    <header class="login-header">
+                        Billing
+                    </header>
+                    <table id="show"></table>
+                </div>
+
+            </div>
+        </div>
+        <div id="footer">
+            <a class="lienket" href="https://www.facebook.com/"><i class="ti-facebook"></i> </a>
+            <a class="lienket" href="https://www.instagram.com/"> <i class="ti-instagram"></i> </a>
+            <a class="lienket" href="https://www.snapchat.com/vi-VN"><i class="ti-snapchat"></i></a>
+            <a class="lienket" href="https://www.pinterest.com/"><i class="ti-pinterest"></i></a>
+            <br>
+            <p>Thank You for listening <a href="https://codegym.vn/">codegym</a></p>
+
+        </div>
+
+
+    </div>
+
+    <!--Start-pay-modal-->
+</div>
+<dialog id="dialog-modal">
+    <div class="modal">
+        <div class="modal-container">
+            <!--            <div class="modal-close">-->
+            <!--                <i class="modal-close-icon ti-close"></i>-->
+            <!--            </div>-->
+            <header class="modal-header">
+                <i class="modal-heading-icon ti-bag">
+                </i>
+                Tickets
+
+            </header>
+
+            <div class="modal-body">
+                <label for="ticket-quantity" class="model-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 person
+                </label>
+                <input id="ticket-quantity" type="number" class="modal-input" placeholder="How many?">
+
+                <label for="ticket-email" class="model-label">
+                    <i class="ti-map"></i>
+                    Where are you want to go ?
+                </label>
+
+                <select id="ticket-email" class="modal-input">
+                    <option>New York</option>
+                    <option>Paris</option>
+                    <option>San Francisco</option>
+                </select>
+                <!--                <input id="ticket-email" type="text" class="modal-input" placeholder="place..">-->
+
+                <button id="buy-tickets" onclick="Pay()">
+                    Pay <i class="ti-check"></i>
+                </button>
+
+                <button id="modal-close" onclick="closeDialog()">
+                    Close <i class="ti-close"></i>
+
+                </button>
+
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="help1">help?</a></p>
+            </footer>
+
+        </div>
+
+    </div>
+
+</dialog>
+<!--End-pay-modal -->
+
+<!--start-modal    -->
+<div class="modal" id="login-window" style="display: none; border-radius: 5px">
+    <div class="container">
+        <div class="form-login">
+            <h1>Login</h1>
+            <div class="form-text">
+                <input type="text" id="account" placeholder="account">
+            </div>
+            <div class="form-text">
+                <input type="password" id="password" placeholder="password">
+            </div>
+            <button style="cursor: pointer;" onclick="Check()">Login</button>
+            <span>Haven't an accout? register <a href="#" onclick="registerAccount()"> here</a> </span>
+            <div id="rp"></div>
+        </div>
+
+        <p onclick="loginClose()"></p>
+    </div>
+</div>
+<!--End-login-modal-->
+
+<!--star-register-account-->
+<div class="modal" id="register" style="display: none" >
+    <div class="container">
+        <form class="form-createRegister" id="DangKi" onsubmit="signup()">
+            <h1>Register</h1>
+
+            <div class="form-text">
+                <input type="text" id="name-Account" placeholder="Name account">
+            </div>
+
+            <div class="form-text">
+                <input type="password" id="createPassword" placeholder="password">
+            </div>
+            <button style="cursor: pointer;" onclick="Addnew()">Create account</button>
+
+        </form>
+
+    </div>
+</div>
+<script src="assets/w3_band.js"></script>
+<script src="assets/login.js"></script>
+<script src="assets/localStorage.js"></script>
+</div>
+
+</body>
+</html>
