@@ -35,6 +35,19 @@
     border-radius: 5px;
 }
 
+.form-createRegister p {
+    height: 24px;
+    padding: 5px 0 3px 0;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+    background: #9b59b6;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
 .form-text-create {
     margin-bottom: 40px;
     position: relative;

@@ -7,34 +7,60 @@ function Addnew(){
     event.preventDefault();
     let email = document.getElementById('name-Account').value
     let password = document.getElementById('createPassword').value
+    let name = document.getElementById('User-Account').value
+    let number = document.getElementById('ticket-quantity').value
+    let place = document.getElementById('ticket-email').value
+    let money= number * 15
+    let bill = {
+        number : number,
+        place : place,
+        money : money
+    }
     let user = {
         email : email,
         password : password,
+        name : name,
+        bill : bill
     }
 
     let json = JSON.stringify(user)
+
     localStorage.setItem(email,json)
-    localStorage.setItem(password,json)
-    alert('dang kí thành công')
+    alert('Đăng kí thành công')
     document.getElementById('register').style.display='none'
 }
+
+
 
 function Check() {
 
     let email = document.getElementById('account').value
     let password = document.getElementById('password').value
-    console.log(email + password)
+    let name = document.getElementById('User-Account').value
+    let number = document.getElementById('ticket-quantity').value
+    let place = document.getElementById('ticket-email').value
+    let money= number * 15
+    let bill = {
+        number : number,
+        place : place,
+        money : money
+    }
+
+
+
     let user = localStorage.getItem(email)
     let data = JSON.parse(user)
+    console.log(data)
 
-    if (user == null) {
+    if (email == null ){
         alert('pls try  again')
-    } else if (email == data.email && password == data.password) {
+    } else if (email == data.email && password == data.password ) {
         alert('welcome back')
         document.getElementById('login-window').style.display = "none"
         document.getElementById('dangNhap').style.display = 'none'
         document.getElementById('signOut').style.display='block'
-        document.getElementById('result').innerHTML = "welcome back"+ email
+        document.getElementById('result').innerHTML = "welcome back "+ data.name
+        document.getElementById('show').innerHTML = show(bill)
     }
 }
 

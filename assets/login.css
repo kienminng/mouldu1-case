@@ -40,6 +40,17 @@
     border-radius: 5px;
 }
 
+.form-login p {
+    height: 35px;
+    width: 100px;
+    padding: 5px 0 3px 0;
+    cursor: pointer;
+    background: #9b59b6;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
 .form-text {
     margin-bottom: 40px;
     position: relative;
@@ -53,6 +64,8 @@
     cursor: pointer;
 
 }
+
+
 
 /*.form-text label {*/
 /*    position: absolute;*/

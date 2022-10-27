@@ -22,7 +22,22 @@ function Login() {
     document.getElementById('login-window').style.display= 'block'
 
 }
+function registerAccount(){
+    document.getElementById('register').style.display = 'block'
+    console.log("ok")
 
+}
+
+function closeR() {
+    document.getElementById('register').style.display='none'
+    document.getElementById('login-window').style.display= 'block'
+
+}
+
+function closeL() {
+    document.getElementById('login-window').style.display= 'none'
+
+}
 
 // function Check() {
 //
@@ -54,11 +69,7 @@ function Login() {
 //     }
 // }
 //
-function registerAccount(){
-    document.getElementById('register').style.display = 'block'
-    console.log("ok")
 
-}
 // console.log("hello world")
 //
 // function Addnew() {

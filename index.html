@@ -311,7 +311,7 @@
             </div>
             <button style="cursor: pointer;" onclick="Check()">Login</button>
             <span>Haven't an accout? register <a href="#" onclick="registerAccount()"> here</a> </span>
-            <div id="rp"></div>
+            <p onclick="closeL()">close</p>
         </div>
 
         <p onclick="loginClose()"></p>
@@ -332,9 +332,15 @@
             <div class="form-text">
                 <input type="password" id="createPassword" placeholder="password">
             </div>
-            <button style="cursor: pointer;" onclick="Addnew()">Create account</button>
 
+            <div class="form-text">
+                <input type="text" id="User-Account" placeholder="User account">
+            </div>
+
+            <button style="cursor: pointer;" onclick="Addnew()">Create account</button>
+            <p onclick="closeR()">close</p>
         </form>
+
 
     </div>
 </div>

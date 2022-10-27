@@ -75,14 +75,19 @@ function Pay() {
     let number = document.getElementById('ticket-quantity').value
     let place = document.getElementById('ticket-email').value
     let money= number * 15
-
     let newObj = new Buy(number, money, place)
 
+
+
+
     buy.push(newObj)
+
+
 
     alert("You was bought a ticker")
 
     show()
+
 }
 
 function xoa(index) {
