@@ -65,6 +65,19 @@
 
 }
 
+#save {
+    padding: 5px 10px 5px 10px;
+    float: right;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+#save:hover {
+    background: #ccc;
+    color: black;
+    cursor: pointer;
+}
 
 
 /*.form-text label {*/

@@ -34,7 +34,7 @@ class Buy {
 
 let NY = new Buy(1, 1 * 15, "New York")
 
-let buy = [NY]
+let buy = []
 let divShow = document.getElementById("show")
 
 function show() {
@@ -47,9 +47,9 @@ function show() {
                        </tr>
                        
                        <tr>
-                       <td>${buy[i].number}</td>
-                       <td>${buy[i].money} </td>
-                       <td>${buy[i].place}</td>
+                       <td id="1">${buy[i].number}</td>
+                       <td id="2">${buy[i].money} </td>
+                       <td id="3">${buy[i].place}</td>
                        <td><button onclick="edit(${i})">Edit</button></td>
                        <td><button onclick="xoa(${i})">Delete</button></td>
                    </tr>`
@@ -76,17 +76,19 @@ function Pay() {
     let place = document.getElementById('ticket-email').value
     let money= number * 15
     let newObj = new Buy(number, money, place)
+    let i = 0
 
 
 
 
-    buy.push(newObj)
+    buy.splice(i,1,newObj)
 
 
 
     alert("You was bought a ticker")
 
     show()
+    document.getElementById('dialog-modal').close()
 
 }
 

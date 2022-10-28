@@ -32,9 +32,9 @@
 
             </li>
         </ul>
-        <!-- End : Nav -->
+        <!----------------------------------------- End : Nav ---------------------------------------------->
 
-        <!-- Begin: login button -->
+        <!-------------------------------------- Begin: login button -------------------------------->
 
 
         <div class="login-btn" style="display: inline-block">
@@ -44,7 +44,7 @@
         </div>
 
 
-        <!-- End: login button -->
+        <!-- --------------------------End: login button ------------------------------------------------------------>
     </div>
 
 
@@ -71,7 +71,7 @@
 
     </div>
 
-
+<!-- ---------------------------------------------------content-------------------------------------------------------->
     <div id="content">
         <div class="content-section">
             <h2 class="section-heading">THE BAND</h2>
@@ -113,7 +113,7 @@
                     <li>November <span class="quantity">3</span></li>
                 </ul>
 
-                <!-- place -->
+                <!-------------------------------------- place ---------------------------------------------->
                 <div class="place-list">
 
                     <div class="place-item">
@@ -152,7 +152,7 @@
                 </div>
             </div>
         </div>
-
+<!-------------------------------------------------------contact---------------------------------------------------->
         <div class="content-section" style="margin-bottom: 00px">
             <h2 class="section-heading">CONTACT</h2>
             <p class="section-sub-heading">Fan? Drop a note!</p>
@@ -186,6 +186,7 @@
                 <button class="mt-8 form-submit" type="submit" onclick="SenT()" style="cursor:pointer">Send</button>
             </div>
         </div>
+<!----------------------------------------------------        EndContact----------------------------------------------->
         <div id="slider4">
             <div id="login">
                 <div class="login-modal">
@@ -224,11 +225,17 @@
                     <header class="login-header">
                         Billing
                     </header>
-                    <table id="show"></table>
+                    <table id="show">
+
+                    </table>
                 </div>
 
             </div>
+
+            <p id="save" onclick="Save()">Save the bill</p>
         </div>
+<!-------------------------------------------        End contact----------------------------------------------------->
+
         <div id="footer">
             <a class="lienket" href="https://www.facebook.com/"><i class="ti-facebook"></i> </a>
             <a class="lienket" href="https://www.instagram.com/"> <i class="ti-instagram"></i> </a>
@@ -296,9 +303,9 @@
     </div>
 
 </dialog>
-<!--End-pay-modal -->
+<!-------------------------------------------------------------End-pay-modal ---------------------------------------->
 
-<!--start-modal    -->
+<!-------------------------------------------------------start-modal Login   ---------------------------------------->
 <div class="modal" id="login-window" style="display: none; border-radius: 5px">
     <div class="container">
         <div class="form-login">
@@ -317,9 +324,9 @@
         <p onclick="loginClose()"></p>
     </div>
 </div>
-<!--End-login-modal-->
+<!----------------------------------------------------End-login-modal------------------------------------------------>
 
-<!--star-register-account-->
+<!-----------------------------------------------------star-register-account---------------------------------------->
 <div class="modal" id="register" style="display: none" >
     <div class="container">
         <form class="form-createRegister" id="DangKi" onsubmit="signup()">
@@ -344,6 +351,8 @@
 
     </div>
 </div>
+
+<!---------------------------------------------------------end-register----------------------------------------------->
 <script src="assets/w3_band.js"></script>
 <script src="assets/login.js"></script>
 <script src="assets/localStorage.js"></script>
